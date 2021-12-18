@@ -97,7 +97,36 @@ var [-1]  #mostramos el ultimo dato de la lista o cadena
 var [::-1] #imprime la cadena de inicio a fin invertida empezando desde el ultimo dato
 var [:5]  # imprime hasta la linea 5
 
+for car in range(0,len(var)):
+    print(car)
 
+
+var[3] = 'f'
+
+cadena2 = var[0:3] + 'f' + var[4:]
+cadena2 
+
+numero=4
+'el numero vale: '+str(numero) #forma correcta de concatenar algo que son de diferente tipo
+
+'el numero vale: '+ numero  #marca error
+
+'el numero vale: '+str(numero)
+
+for car in range((len(var)-1),0,-1):
+    print(var[car])
+
+#para cambiar un valor dentro de una cadena
+
+cadena2 = var[0:3] + 'f' + var[4:]
+
+numero = 4
+'el numero vale: ' + numero #ERROR no es la forma correcta de concatenar 
+'el numero vale: ' + str(numero)
+
+#otra forma de hacerlo es con las f strings || f'texto muestra: {variable}' 
+f'el numero vale: {numero}'
+f'el numero vale: {numero} y es de tipo {type(numero)}'
 
 
 
