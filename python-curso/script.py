@@ -128,5 +128,50 @@ numero = 4
 f'el numero vale: {numero}'
 f'el numero vale: {numero} y es de tipo {type(numero)}'
 
+## DICCIONARIOS
+diccionarios = dict()  #asi se declaran los diccionarios
+diccionarios = {}      #tambien asi se declaran 
 
+dicci = {'nombre':'lalo','edad':28}
+dicci  #nos imprime los valores dentro del diccionario
+
+dicci['nombre']  #v a imprimir el valor que esta guardado en nombre
+dicci['edad']
+
+#Obtener las Keys de un diccionario 
+dicci.keys()
+
+for k in dicci.keys():   #se recore todo el diccioario
+    print(dicci[k])
+
+#lalo
+#28
+
+for i in dicci.values():  #Otra forma de imprimir los valores
+    print(i)
+
+
+#PARA IMPRIMIR AMBOS TANTO VALOR COMO KEYS
+
+for k,i in dicci.items():  #de esta forma regresa los valores en tuplas
+    print(f'llave: {k} \n valor: {i}')
+
+#otra forma para hacer la impresion de los valores es:
+for k in dicci.items():
+    print(f'llave: {k[0]} \n valor: {k[1]}')
+
+#se imprime lo mismo
+
+#DEL
+#palabra reservada para eliminar variables o partes del diccionario
+
+dicci 
+# {'nombre': 'lalo', 'edad': 28}
+
+del dicci['edad'] #se elimina la edad
+
+dicci
+# {'nombre': 'lalo'}
+
+del dicci  #se elimina todo el diccionario
 
